@@ -11,6 +11,7 @@ import Ionicons from "react-native-vector-icons/Ionicons";
 const IntroScreen2 = () => {
   return (
     <View style={{ flex: 1 }}>
+        {/* Image and Text */}
       <Image
         style={{ height: 850, width: 400 }}
         source={require("../Images/paris.jpg")}
@@ -43,6 +44,7 @@ const IntroScreen2 = () => {
           France
         </Text>
       </View>
+      {/* Text and Button */}
       <View
         style={{
           top: -125,
@@ -51,10 +53,20 @@ const IntroScreen2 = () => {
           marginHorizontal: 20,
         }}
       >
-        <Text style={{ fontSize: 25, fontWeight: "500", color: "white", shadowOpacity:2, padding:10 }}>
+        <Text
+          style={{
+            fontSize: 25,
+            fontWeight: "500",
+            color: "white",
+            shadowOpacity: 2,
+            padding: 10,
+          }}
+        >
           Explore World
         </Text>
-        <TouchableOpacity style={{ backgroundColor: "white", borderRadius: 50, padding:10}}>
+        <TouchableOpacity
+          style={{ backgroundColor: "white", borderRadius: 50, padding: 10 }}
+        >
           <Ionicons name="arrow-forward-outline" size={30} color="#F5D559" />
         </TouchableOpacity>
       </View>
