@@ -9,7 +9,7 @@ import React from "react";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 import { Ionicons } from "@expo/vector-icons";
 
-const IntroScreen = () => {
+const IntroScreen = ({navigation}) => {
   return (
     <View style={{ flex: 10 }}>
       {/* Image */}
@@ -40,7 +40,9 @@ const IntroScreen = () => {
           </Text>
         </View>
         {/* Button and text */}
-        <TouchableOpacity
+        <TouchableOpacity onPress={() =>{
+          navigation.navigate("HomeScreen")
+        }}
           style={{
             backgroundColor: "#0B2F54",
             padding: 10,
