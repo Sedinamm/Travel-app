@@ -4,6 +4,7 @@ import {
   TouchableOpacity,
   SafeAreaView,
   Image,
+  ScrollView,
 } from "react-native";
 import React from "react";
 // import { SafeAreaView } from 'react-native-safe-area-context'
@@ -40,6 +41,44 @@ const HomeScreen = ({ navigation }) => {
           />
         </TouchableOpacity>
       </View>
+
+        {/* Horizontal Scroll View */}
+      <ScrollView horizontal style={{marginTop:30, marginHorizontal:10}}>
+        <TouchableOpacity>
+        <View style={{alignItems:"center", marginRight:30,}}>
+        <Text style={{ fontSize:15, fontWeight:"bold", color:"purple"}}>Popular</Text>
+        </View>
+        </TouchableOpacity>
+        <TouchableOpacity>
+        <View style={{alignItems:"center", marginRight:30}}>
+        <Text style={{ fontSize:15, fontWeight:"bold"}}>Featured</Text>
+        </View>
+        </TouchableOpacity>
+        <TouchableOpacity>
+        <View style={{alignItems:"center", marginRight:30}}>
+        <Text style={{ fontSize:15, fontWeight:"bold"}}>Most Visited</Text>
+        </View>
+        </TouchableOpacity>
+        <TouchableOpacity>
+        <View style={{alignItems:"center", marginRight:30}}>
+        <Text style={{ fontSize:15, fontWeight:"bold"}}>Europe</Text>
+        </View>
+        </TouchableOpacity>
+        <TouchableOpacity>
+        <View style={{alignItems:"center", marginRight:30}}>
+        <Text style={{ fontSize:15, fontWeight:"bold"}}>Asia</Text>
+        </View>
+        </TouchableOpacity>
+        <TouchableOpacity>
+        <View style={{alignItems:"center", marginRight:30}}>
+        <Text style={{ fontSize:15, fontWeight:"bold"}}>Africa</Text>
+        </View>
+        </TouchableOpacity>
+      </ScrollView>
+      <ScrollView>
+        
+      </ScrollView>
+
     </SafeAreaView>
   );
 };
