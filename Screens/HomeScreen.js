@@ -654,21 +654,481 @@ const HomeScreen = ({ navigation }) => {
           </View>
 
           {/* Recommended and View all text */}
-        
-        <View
-          style={{
-            marginHorizontal: 20,
-            flexDirection: "row",
-            justifyContent: "space-between",
-            alignItems: "center",
-            marginTop: 30,
-          }}
-        >
-          <Text style={{fontWeight:"bold"}}>Recommended</Text>
-          <TouchableOpacity>
-          <Text style={{fontWeight:"bold"}}>View All</Text>
-          </TouchableOpacity>
-        </View>
+
+          <View
+            style={{
+              marginHorizontal: 20,
+              flexDirection: "row",
+              justifyContent: "space-between",
+              alignItems: "center",
+              marginTop: 30,
+            }}
+          >
+            <Text style={{ fontWeight: "bold", fontSize: 15 }}>
+              Recommended
+            </Text>
+            <TouchableOpacity>
+              <Text style={{ fontWeight: "bold" }}>View All</Text>
+            </TouchableOpacity>
+          </View>
+
+          {/* List of Recommended places */}
+
+          {/* First */}
+          <View style={{ flexDirection: "row", alignSelf: "center",  }}>
+            <TouchableOpacity>
+              <View
+                style={{
+                  backgroundColor: "#D8D9CF",
+                  height: 170,
+                  width: 160,
+                  marginHorizontal: 10,
+                  marginTop: 20,
+                  borderRadius: 20,
+                }}
+              >
+                {/* Image */}
+                <Image
+                  style={{ height: 170, width: 160, borderRadius: 20 }}
+                  source={require("../Images/9.jpg")}
+                />
+
+                {/* Image description */}
+                <View style={{marginHorizontal:-10}}>
+                  <View style={{ flexDirection: "row" }}>
+                    <Text
+                      style={{
+                        position: "absolute",
+                        bottom: 40,
+                        color: "white",
+                        marginHorizontal: 20,
+                        fontWeight: "bold",
+                        fontSize: 10,
+                      }}
+                    >
+                      Amazon Forest
+                    </Text>
+                    <Ionicons
+                      style={{
+                        position: "absolute",
+                        bottom: 40,
+                        marginHorizontal: 140,
+                      }}
+                      name="heart-circle-outline"
+                      size={15}
+                      color="red"
+                    />
+                  </View>
+
+                  {/* Rating icons and text */}
+                  <View style={{ flexDirection: "row" }}>
+                    <Ionicons
+                      style={{
+                        position: "absolute",
+                        bottom: 20,
+                        marginHorizontal: 20,
+                      }}
+                      name="star"
+                      size={10}
+                      color="gold"
+                    />
+                    <Ionicons
+                      style={{
+                        position: "absolute",
+                        bottom: 20,
+                        marginHorizontal: 32,
+                      }}
+                      name="star"
+                      size={10}
+                      color="gold"
+                    />
+                    <Ionicons
+                      style={{
+                        position: "absolute",
+                        bottom: 20,
+                        marginHorizontal: 44,
+                      }}
+                      name="star"
+                      size={10}
+                      color="gold"
+                    />
+                    <Ionicons
+                      style={{
+                        position: "absolute",
+                        bottom: 20,
+                        marginHorizontal: 55,
+                      }}
+                      name="star"
+                      size={10}
+                      color="gold"
+                    />
+                    <Ionicons
+                      style={{
+                        position: "absolute",
+                        bottom: 20,
+                        marginHorizontal: 66,
+                      }}
+                      name="star"
+                      size={10}
+                      color="gold"
+                    />
+                    <Text
+                      style={{
+                        position: "absolute",
+                        color: "white",
+                        bottom: 18,
+                        marginHorizontal: 80,
+                        fontWeight: "bold",
+                        shadowOpacity: 2,
+                        fontSize: 10,
+                      }}
+                    >
+                      4.5
+                    </Text>
+                  </View>
+                </View>
+              </View>
+            </TouchableOpacity>
+
+            <TouchableOpacity>
+              <View
+                style={{
+                  backgroundColor: "#D8D9CF",
+                  height: 170,
+                  width: 160,
+                  marginHorizontal: 10,
+                  marginTop: 20,
+                  borderRadius: 20,
+                }}
+              >
+                <Image
+                  style={{ height: 170, width: 160, borderRadius: 20 }}
+                  source={require("../Images/10.jpg")}
+                />
+                                {/* Image description */}
+                                <View style={{marginHorizontal:-10}}>
+                  <View style={{ flexDirection: "row" }}>
+                    <Text
+                      style={{
+                        position: "absolute",
+                        bottom: 40,
+                        color: "white",
+                        marginHorizontal: 20,
+                        fontWeight: "bold",
+                        fontSize: 10,
+                      }}
+                    >
+                      Alaska Mountain
+                    </Text>
+                    <Ionicons
+                      style={{
+                        position: "absolute",
+                        bottom: 40,
+                        marginHorizontal: 140,
+                      }}
+                      name="heart-circle-outline"
+                      size={15}
+                      color="red"
+                    />
+                  </View>
+
+                  {/* Rating icons and text */}
+                  <View style={{ flexDirection: "row" }}>
+                    <Ionicons
+                      style={{
+                        position: "absolute",
+                        bottom: 20,
+                        marginHorizontal: 20,
+                      }}
+                      name="star"
+                      size={10}
+                      color="gold"
+                    />
+                    <Ionicons
+                      style={{
+                        position: "absolute",
+                        bottom: 20,
+                        marginHorizontal: 32,
+                      }}
+                      name="star"
+                      size={10}
+                      color="gold"
+                    />
+                    <Ionicons
+                      style={{
+                        position: "absolute",
+                        bottom: 20,
+                        marginHorizontal: 44,
+                      }}
+                      name="star"
+                      size={10}
+                      color="gold"
+                    />
+                    <Ionicons
+                      style={{
+                        position: "absolute",
+                        bottom: 20,
+                        marginHorizontal: 55,
+                      }}
+                      name="star"
+                      size={10}
+                      color="gold"
+                    />
+                    <Ionicons
+                      style={{
+                        position: "absolute",
+                        bottom: 20,
+                        marginHorizontal: 66,
+                      }}
+                      name="star"
+                      size={10}
+                      color="gold"
+                    />
+                    <Text
+                      style={{
+                        position: "absolute",
+                        color: "white",
+                        bottom: 18,
+                        marginHorizontal: 80,
+                        fontWeight: "bold",
+                        shadowOpacity: 2,
+                        fontSize: 10,
+                      }}
+                    >
+                      4.5
+                    </Text>
+                  </View>
+                </View>
+              </View>
+            </TouchableOpacity>
+          </View>
+
+          {/* Second */}
+          <View style={{ flexDirection: "row", alignSelf: "center" }}>
+            <TouchableOpacity>
+              <View
+                style={{
+                  backgroundColor: "#D8D9CF",
+                  height: 170,
+                  width: 160,
+                  marginHorizontal: 10,
+                  marginTop: 20,
+                  borderRadius: 20,
+                }}
+              >
+                <Image
+                  style={{ height: 170, width: 160, borderRadius: 20 }}
+                  source={require("../Images/11.jpg")}
+                />
+                                {/* Image description */}
+                                <View style={{marginHorizontal:-10}}>
+                  <View style={{ flexDirection: "row" }}>
+                    <Text
+                      style={{
+                        position: "absolute",
+                        bottom: 40,
+                        color: "white",
+                        marginHorizontal: 20,
+                        fontWeight: "bold",
+                        fontSize: 10,
+                      }}
+                    >
+                      Amazon Forest
+                    </Text>
+                    <Ionicons
+                      style={{
+                        position: "absolute",
+                        bottom: 40,
+                        marginHorizontal: 140,
+                      }}
+                      name="heart-circle-outline"
+                      size={15}
+                      color="red"
+                    />
+                  </View>
+
+                  {/* Rating icons and text */}
+                  <View style={{ flexDirection: "row" }}>
+                    <Ionicons
+                      style={{
+                        position: "absolute",
+                        bottom: 20,
+                        marginHorizontal: 20,
+                      }}
+                      name="star"
+                      size={10}
+                      color="gold"
+                    />
+                    <Ionicons
+                      style={{
+                        position: "absolute",
+                        bottom: 20,
+                        marginHorizontal: 32,
+                      }}
+                      name="star"
+                      size={10}
+                      color="gold"
+                    />
+                    <Ionicons
+                      style={{
+                        position: "absolute",
+                        bottom: 20,
+                        marginHorizontal: 44,
+                      }}
+                      name="star"
+                      size={10}
+                      color="gold"
+                    />
+                    <Ionicons
+                      style={{
+                        position: "absolute",
+                        bottom: 20,
+                        marginHorizontal: 55,
+                      }}
+                      name="star"
+                      size={10}
+                      color="gold"
+                    />
+                    <Ionicons
+                      style={{
+                        position: "absolute",
+                        bottom: 20,
+                        marginHorizontal: 66,
+                      }}
+                      name="star"
+                      size={10}
+                      color="gold"
+                    />
+                    <Text
+                      style={{
+                        position: "absolute",
+                        color: "white",
+                        bottom: 18,
+                        marginHorizontal: 80,
+                        fontWeight: "bold",
+                        shadowOpacity: 2,
+                        fontSize: 10,
+                      }}
+                    >
+                      4.5
+                    </Text>
+                  </View>
+                </View>
+              </View>
+            </TouchableOpacity>
+
+            <TouchableOpacity>
+              <View
+                style={{
+                  backgroundColor: "#D8D9CF",
+                  height: 170,
+                  width: 160,
+                  marginHorizontal: 10,
+                  marginTop: 20,
+                  borderRadius: 20,
+                }}
+              >
+                <Image
+                  style={{ height: 170, width: 160, borderRadius: 20 }}
+                  source={require("../Images/12.jpg")}
+                />
+                                {/* Image description */}
+                                <View style={{marginHorizontal:-10}}>
+                  <View style={{ flexDirection: "row" }}>
+                    <Text
+                      style={{
+                        position: "absolute",
+                        bottom: 40,
+                        color: "white",
+                        marginHorizontal: 20,
+                        fontWeight: "bold",
+                        fontSize: 10,
+                      }}
+                    >
+                      Amazon Forest
+                    </Text>
+                    <Ionicons
+                      style={{
+                        position: "absolute",
+                        bottom: 40,
+                        marginHorizontal: 140,
+                      }}
+                      name="heart-circle-outline"
+                      size={15}
+                      color="red"
+                    />
+                  </View>
+
+                  {/* Rating icons and text */}
+                  <View style={{ flexDirection: "row" }}>
+                    <Ionicons
+                      style={{
+                        position: "absolute",
+                        bottom: 20,
+                        marginHorizontal: 20,
+                      }}
+                      name="star"
+                      size={10}
+                      color="gold"
+                    />
+                    <Ionicons
+                      style={{
+                        position: "absolute",
+                        bottom: 20,
+                        marginHorizontal: 32,
+                      }}
+                      name="star"
+                      size={10}
+                      color="gold"
+                    />
+                    <Ionicons
+                      style={{
+                        position: "absolute",
+                        bottom: 20,
+                        marginHorizontal: 44,
+                      }}
+                      name="star"
+                      size={10}
+                      color="gold"
+                    />
+                    <Ionicons
+                      style={{
+                        position: "absolute",
+                        bottom: 20,
+                        marginHorizontal: 55,
+                      }}
+                      name="star"
+                      size={10}
+                      color="gold"
+                    />
+                    <Ionicons
+                      style={{
+                        position: "absolute",
+                        bottom: 20,
+                        marginHorizontal: 66,
+                      }}
+                      name="star"
+                      size={10}
+                      color="gold"
+                    />
+                    <Text
+                      style={{
+                        position: "absolute",
+                        color: "white",
+                        bottom: 18,
+                        marginHorizontal: 80,
+                        fontWeight: "bold",
+                        shadowOpacity: 2,
+                        fontSize: 10,
+                      }}
+                    >
+                      4.5
+                    </Text>
+                  </View>
+                </View>
+              </View>
+            </TouchableOpacity>
+          </View>
         </ScrollView>
       </SafeAreaView>
     </View>
