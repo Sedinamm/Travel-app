@@ -9,6 +9,7 @@ import {
 import React from "react";
 // import { SafeAreaView } from 'react-native-safe-area-context'
 import { Ionicons } from "@expo/vector-icons";
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
 const HomeScreen = ({ navigation }) => {
   return (
@@ -1130,6 +1131,7 @@ const HomeScreen = ({ navigation }) => {
             </TouchableOpacity>
           </View>
         </ScrollView>
+        {/* Bottom tab navigator */}
       </SafeAreaView>
     </View>
   );
