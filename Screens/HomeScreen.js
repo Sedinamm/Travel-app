@@ -99,7 +99,9 @@ const HomeScreen = ({ navigation }) => {
             {/* Suggestions */}
             <ScrollView horizontal>
               {/* first Image container */}
-              <TouchableOpacity>
+              <TouchableOpacity onPress={() =>{
+          navigation.navigate("DescriptionScreen")
+          }}>
                 <View
                   style={{
                     height: 200,
