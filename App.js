@@ -8,6 +8,7 @@ import CalenderScreen from './Screens/CalenderScreen';
 import SearchScreen from './Screens/SearchScreen';
 import ProfileScreen from './Screens/ProfileScreen';
 import DescriptionScreen from './Screens/DescriptionScreen';
+import NestedScreen from './Screens/NestedScreen';
 
 const Stack = createStackNavigator()
 
@@ -23,6 +24,7 @@ export default function App() {
       <Stack.Screen name='SearchScreen' component={SearchScreen} />
       <Stack.Screen name='ProfileScreen' component={ProfileScreen} />
       <Stack.Screen name='DescriptionScreen' component={DescriptionScreen} />
+      <Stack.Screen name='NestedScreen' component={NestedScreen} />
 
       </Stack.Navigator>
 

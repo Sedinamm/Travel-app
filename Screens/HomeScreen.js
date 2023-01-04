@@ -10,6 +10,7 @@ import React from "react";
 // import { SafeAreaView } from 'react-native-safe-area-context'
 import { Ionicons } from "@expo/vector-icons";
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import { NavigationContainer } from "@react-navigation/native";
 
 const HomeScreen = ({ navigation }) => {
   return (
@@ -100,7 +101,7 @@ const HomeScreen = ({ navigation }) => {
             <ScrollView horizontal>
               {/* first Image container */}
               <TouchableOpacity onPress={() =>{
-          navigation.navigate("DescriptionScreen")
+          navigation.navigate("NestedScreen")
           }}>
                 <View
                   style={{
